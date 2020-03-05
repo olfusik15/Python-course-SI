@@ -1,0 +1,13 @@
+git init
+git clone
+git remote origin http... -- polaczenie do repo
+git push -u origin ... wyslanie na remote
+git add /. --dodanie na stage obserwowane /wszytskie zmiany
+git commit -m -- co zrobione i 
+git pull -- wez wszytskie zmiany
+git checkout -b --nowy brunch
+git stash odkladamy ze stage na bok
+git stash clear -- czyscimy "schowki"
+git stash apply 0 -- ktory schowek chcemy przywrocic
+git log 
+git merge
