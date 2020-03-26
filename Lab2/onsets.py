@@ -1,6 +1,6 @@
 list1 = ([2,4,54,65,9,13,15,78,233,12,4],14)
 list2 = ([3,5,7,9,73,2,463,23,45,12,11,88,111], 3)
-
+import time 
 def bubbleSort(x):
     n=len(x)
     
@@ -69,6 +69,17 @@ def onsets_insertion(x):
         
     return wynik1
 
-print("onsets bubble list1", onsets_bubble(list1))
-print("onsets insertion list1", onsets_insertion(list1))
-print("onsets insertion list2", onsets_insertion(list2))
+start1=time.perf_counter()
+print("\n onsets bubble list1", onsets_bubble(list1))
+stop1=time.perf_counter()
+print(stop1-start1)
+
+start2=time.perf_counter()
+print("\n onsets insertion list1", onsets_insertion(list1))
+stop2=time.perf_counter()
+print(stop2-start2)
+
+start3=time.perf_counter()
+print("\n onsets insertion list2", onsets_insertion(list2))
+stop3=time.perf_counter()
+print(stop3-start3)
